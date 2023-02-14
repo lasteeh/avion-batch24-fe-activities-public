@@ -1,0 +1,51 @@
+header#header	{position: sticky;}
+img#header-img
+nav#navbar ul li*3
+a.nav-link*3 href="#(section)"
+
+@media (min-width: 900px;)
+	element {display: flex;}
+
+background: #1e1515 url(https://cdn.ncwest.com/gw2-buysite/08192022-24CE215B236147B3/images/store/bg/img-main-bg-bottom.jpg) no-repeat bottom/100% auto;
+
+video#video https://www.youtube.com/watch?v=0zoDp6rK9V0
+
+section#hero
+section#hook
+section#mounts
+section#cta
+section#gallery
+
+form#form
+input#email placeholder="email@domain.com"
+pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
+button#submit action="(page).html"
+
+
+assets:
+
+https://wiki.guildwars2.com/wiki/Mount
+
+https://cdn.ncwest.com/gw2-buysite/08192022-24CE215B236147B3/images/store/games/img-games-gw2-bg-top.jpg
+
+https://cdn.ncwest.com/cms/wpec024z/skyscale_animated_homepage_banner_v2_textsafe.mp4
+
+https://guildwars2.staticwars.com/wp-content/themes/guildwars2.com-live/img/featured-ft.c2e7567e.jpg
+
+https://cdn.ncwest.com/gw2-buysite/08192022-24CE215B236147B3/images/store/banners/img-main-hero-banner-cover.png
+
+https://cdn.ncwest.com/gw2-buysite/08192022-24CE215B236147B3/images/store/nav/img-common-navi-bg.png
+
+https://guildwars2.staticwars.com/wp-content/themes/guildwars2.com-live/img/bumpers/header.26e56999.jpg
+
+https://buy.guildwars2.com/en-us/path-of-fire
+
+https://www.guildwars2.com/en/
+
+
+
+
+reference: 
+
+http://thenotmonster.com/
+

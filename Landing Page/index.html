@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A New Way To Explore - Guild Wars 2 Mounts</title>
+    <link rel="icon" href="data:," />
+    <link rel="icon" type="image/x-icon" href="assets/images/ico.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" id="home-link"
+        ><img src="assets/images/gw2-logo.webp" alt="" id="header-img"
+      /></a>
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="#mounts" class="nav-link">Mounts</a></li>
+          <li><a href="#cta" class="nav-link">Purchase</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="home">
+      <section id="hero">
+        <div class="wrapper">
+          <div>
+            <h1>A New Way to Explore</h1>
+            <p>
+              Mounts are far more than a speed boost—they're a whole new way to
+              move through the world of Tyria.
+            </p>
+            <a class="button" href="#cta">Get It Today!</a>
+          </div>
+          <img id="hero-img" src="assets/images/warclaw-hero.webp" alt="" />
+        </div>
+      </section>
+      <section id="hook">
+        <div class="wrapper">
+          <button id="video-open"></button>
+          <div class="details">
+            <p>
+              Introducing mounts, a brand-new feature in Guild Wars 2: Path of
+              Fire! Visit the official expansion site at
+              https://guildwars2.com/pathoffire for more information, or
+              https://buy.guildwars2.com to pre-order.
+            </p>
+            <a class="button" href="#cta">Button</a>
+          </div>
+          <dialog id="video-modal">
+            <button class="button" id="video-close">X</button>
+            <video id="video" src="assets/video/mounts.mp4" controls>
+              <source src="assets/video/mounts.mp4" type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </dialog>
+        </div>
+      </section>
+      <section id="mounts">
+        <div class="wrapper" id="mount-slider">
+          <input type="radio" name="mount" id="raptor" />
+          <label for="raptor"
+            ><img src="assets/images/raptor-overhead.webp" alt=""
+          /></label>
+          <div class="mount-feature_bg" id="raptor-details">
+            <h1>The Raptor</h1>
+            <p>
+              Raptors are hardy and swift, and surprisingly easy to train due to
+              their intelligence. They can cross great distances in a single
+              leap, making them the favored mount of many of the desert's
+              denizens. Travelers are advised not to leave the city of Amnoon
+              without obtaining a raptor companion.
+            </p>
+            <video src="assets/video/raptor-vid.webm" muted loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <input type="radio" name="mount" id="springer" />
+          <label for="springer"
+            ><img src="assets/images/springer-overhead.webp" alt=""
+          /></label>
+          <div class="mount-feature_bg" id="springer-details">
+            <h1>The Springer</h1>
+            <p>
+              Their long ears and wiggly noses are charming, but the springer's
+              greatest strength is their ability to make jaw-dropping vertical
+              leaps. Traveling merchants and couriers use them to cross sheer
+              cliffs in the Crystal Highlands, shaving weeks off their journeys.
+            </p>
+            <video src="assets/video/springer-vid.webm" muted loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <input type="radio" name="mount" id="skimmer" />
+          <label for="skimmer"
+            ><img src="assets/images/skimmer-overhead.webp" alt=""
+          /></label>
+          <div class="mount-feature_bg" id="skimmer-details">
+            <h1>The Skimmer</h1>
+            <p>
+              Skimmers are graceful creatures native to the Elon River. They
+              live above water, breathing through large air sacs as they float
+              above the surface. While they cannot truly fly, they can hover for
+              short distances at a height of several norn, making them
+              indispensable for crossing large areas of treacherous quicksand or
+              sulfur.
+            </p>
+            <video src="assets/video/skimmer-vid.webm" muted loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <input type="radio" name="mount" id="jackal" checked />
+          <label for="jackal"
+            ><img src="assets/images/jackal-overhead.webp" alt=""
+          /></label>
+          <div class="mount-feature_bg" id="jackal-details">
+            <h1>The Jackal</h1>
+            <p>
+              Jackals are elusive, magical creatures formed of shifting sands
+              and given shape by magical runes. They can dissipate into sand to
+              teleport short distances and dash through sand portals. The djinn
+              of the Desolation create and tame them; prove yourself a worthy
+              trainer, and you may befriend one.
+            </p>
+            <video src="assets/video/jackal-vid.webm" muted autoplay loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <input type="radio" name="mount" id="griffon" />
+          <label for="griffon"
+            ><img src="assets/images/griffon-overhead.webp" alt=""
+          /></label>
+          <div class="mount-feature_bg" id="griffon-details">
+            <h1>The Griffon</h1>
+            <p>
+              Despite weighing as much as a dolyak, the elusive giant griffon
+              can glide at high altitudes and even take off briefly from the
+              ground. The Mordant Crescent is acting to suppress recent rumors
+              of griffon riders in the desert skies, and you have quite a
+              journey ahead if you'd like one for yourself.
+            </p>
+            <video src="assets/video/griffon-vid.webm" muted loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <input type="radio" name="mount" id="beetle" />
+          <label for="beetle"
+            ><img src="assets/images/beetle-overhead.webp" alt=""
+          /></label>
+          <div class="mount-feature_bg" id="beetle-details">
+            <h1>The Roller Beetle</h1>
+            <p>
+              Roller beetles can cross vast stretches of sand dunes in the blink
+              of an eye by curling into a ball to gather momentum. Controlling
+              beetles gracefully at top speed requires skill and finesse,
+              encouraging their fans to form competitive racing networks across
+              Tyria.
+            </p>
+            <!-- <p>
+              Befriend your roller beetle in episode 3 of Living World season 4,
+              “Long Live the Lich.”
+            </p> -->
+            <video src="assets/video/beetle-vid.webm" muted loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <input type="radio" name="mount" id="warclaw" />
+          <label for="warclaw"
+            ><img src="assets/images/warclaw-overhead.webp" alt=""
+          /></label>
+          <div class="mount-feature_bg" id="warclaw-details">
+            <h1>The Warclaw</h1>
+            <p>
+              Discovered by Durmand Priory scholars, warclaws are magical
+              constructs bound to armor of uncertain origin. Assembling the
+              armor will manifest a fierce and loyal mount to ride in the
+              Mists—but you'll need to join the Mist War to find it.
+            </p>
+            <p>Bond with your Warclaw in World vs. World.</p>
+            <video src="assets/video/warclaw-vid.webm" muted loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <input type="radio" name="mount" id="skyscale" />
+          <label for="skyscale"
+            ><img src="assets/images/skyscale-overhead.webp" alt=""
+          /></label>
+          <div class="mount-feature_bg" id="skyscale-details">
+            <h1>The Skyscale</h1>
+            <p>
+              Skyscales are a new and mysterious draconic life form. They use
+              their powerful wings to lift into the air from the ground and
+              maintain altitude and can cling to walls to regain their strength.
+              With a skyscale companion, you'll reach heights you've only
+              dreamed of.
+            </p>
+            <!-- <p>
+              Complete episode 6 of Living World season 4, “War Eternal”, to aid
+              the skyscales.
+            </p> -->
+            <video src="assets/video/skyscale-vid.webm" muted loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <input type="radio" name="mount" id="turtle" />
+          <label for="turtle"
+            ><img src="assets/images/turtle-overhead.webp" alt=""
+          /></label>
+          <div class="mount-feature_bg" id="turtle-details">
+            <h1>The Siege Turtle</h1>
+            <p>
+              Siege Turtle can bear two riders: one to handle the turtle, and
+              another to operate the weapons strapped to its shell. Raise your
+              own walking war machine and take a friend out for combat
+              adventures!
+            </p>
+            <video src="assets/video/turtle-vid.webm" muted loop>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+      <section id="cta">
+        <div class="wrapper">
+          <div id="cta-selection">
+            <img id="select-bundle" src="assets/images/bundle.webp" alt="" />
+            <img
+              id="select-raptor"
+              src="assets/images/raptor-select.webp"
+              alt=""
+            />
+            <img
+              id="select-springer"
+              src="assets/images/springer-select.webp"
+              alt=""
+            />
+            <img
+              id="select-skimmer"
+              src="assets/images/skimmer-select.webp"
+              alt=""
+            />
+            <img
+              id="select-jackal"
+              src="assets/images/jackal-select.webp"
+              alt=""
+            />
+            <img
+              id="select-griffon"
+              src="assets/images/griffon-select.webp"
+              alt=""
+            />
+            <img
+              id="select-beetle"
+              src="assets/images/beetle-select.webp"
+              alt=""
+            />
+            <img
+              id="select-warclaw"
+              src="assets/images/warclaw-select.webp"
+              alt=""
+            />
+            <img
+              id="select-skyscale"
+              src="assets/images/skyscale-select.webp"
+              alt=""
+            />
+            <img
+              id="select-turtle"
+              src="assets/images/turtle-select.webp"
+              alt=""
+            />
+          </div>
+          <div id="cta-details">
+            <h2 id="selection-title">Mount Bundle</h2>
+            <h1 id="cost">4999999</h1>
+            <p>
+              Unlock and train your new companions using the max-level Mastery
+              character progression system, and explore freely by leaping across
+              canyons, bounding up high cliffs, and skimming over quicksand.
+            </p>
+            <button id="open-form" class="button">Purchase</button>
+          </div>
+
+          <dialog id="cta-form">
+            <button id="close-form" class="button">X</button>
+            <form id="form">
+              <label
+                >Mount Bundle<input
+                  type="radio"
+                  id="bundle-option"
+                  name="mount-select"
+                  value="4999999"
+                  title="Mount Bundle"
+                  checked
+                />
+              </label>
+
+              <label
+                >Raptor<input
+                  type="radio"
+                  id="raptor-option"
+                  name="mount-select"
+                  value="0019999"
+                  title="Raptor"
+                />
+              </label>
+
+              <label
+                >Springer<input
+                  type="radio"
+                  id="springer-option"
+                  name="mount-select"
+                  value="0019999"
+                  title="Springer"
+                />
+              </label>
+
+              <label
+                >Skimmer<input
+                  type="radio"
+                  id="skimmer-option"
+                  name="mount-select"
+                  value="0049999"
+                  title="Skimmer"
+                />
+              </label>
+
+              <label
+                >Jackal<input
+                  type="radio"
+                  id="jackal-option"
+                  name="mount-select"
+                  value="0304000"
+                  title="Jackal"
+                />
+              </label>
+
+              <label
+                >Griffon<input
+                  type="radio"
+                  id="griffon-option"
+                  name="mount-select"
+                  value="2499999"
+                  title="Griffon"
+                />
+              </label>
+
+              <label
+                >Roller Beetle<input
+                  type="radio"
+                  id="beetle-option"
+                  name="mount-select"
+                  value="0099999"
+                  title="Roller Beetle"
+                />
+              </label>
+
+              <label
+                >Warclaw<input
+                  type="radio"
+                  id="warclaw-option"
+                  name="mount-select"
+                  value="0079999"
+                  title="Warclaw"
+                />
+              </label>
+
+              <label
+                >Skyscale<input
+                  type="radio"
+                  id="skyscale-option"
+                  name="mount-select"
+                  value="1490000"
+                  title="Skyscale"
+                />
+              </label>
+
+              <label
+                >Siege Turtle<input
+                  type="radio"
+                  id="turtle-option"
+                  name="mount-select"
+                  value="1094500"
+                  title="Siege Turtle"
+                />
+              </label>
+
+              <p>Please log-in to proceed.</p>
+
+              <label>
+                Username or Email
+                <input
+                  type="text"
+                  name=""
+                  id="email"
+                  pattern="([A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,})|([A-Za-z]+.[0-9]{4})"
+                  placeholder="user.1234 / email@domain.com"
+                  required
+              /></label>
+
+              <label>
+                Password
+                <input type="password" name="" id="" required
+              /></label>
+
+              <button type="submit" id="submit">submit</button>
+            </form>
+          </dialog>
+        </div>
+      </section>
+      <section id="gallery">
+        <h1>Gallery</h1>
+        <div class="wrapper">
+          <img src="assets/images/media1.jpg" alt="" />
+          <img src="assets/images/media2.jpg" alt="" />
+          <img src="assets/images/media3.jpg" alt="" />
+          <img src="assets/images/media4.jpg" alt="" />
+          <img src="assets/images/media5.jpg" alt="" />
+          <img src="assets/images/media6.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>design by</p>
+      <h1>Last</h1>
+      <span>Non-commercial project. All pictures belong to their authors.</span>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

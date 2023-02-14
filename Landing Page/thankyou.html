@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You!</title>
+    <link rel="icon" href="data:," />
+    <link rel="icon" type="image/x-icon" href="assets/images/ico.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #gold,
+      #silver,
+      #copper {
+        display: inline-block;
+        padding: 30px;
+        margin-bottom: 10px;
+        background-size: contain;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <a href="index.html" id="home-link"
+        ><img src="assets/images/gw2-logo.webp" alt="" id="header-img"
+      /></a>
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link">Go Back</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="thankyou">
+      <h1>Thank you for your Purchase.</h1>
+      <div id="recap">
+        <div id="recap-details">
+          <h1 id="cost"></h1>
+        </div>
+      </div>
+      <p>Email will be sent shortly</p>
+    </main>
+    <footer></footer>
+    <script>
+      let boughtObject = JSON.parse(sessionStorage.getItem("purchasedItem"));
+
+      const bTitle = boughtObject.tt;
+      const bCost = boughtObject.cs;
+
+      let recap = document.getElementById("recap");
+      let recapDetails = document.getElementById("recap-details");
+      let costElement = document.getElementById("cost");
+
+      costElement.textContent = bCost;
+
+      let cost = costElement.innerText;
+
+      let h2 = document.createElement("h2");
+      h2.classList.add("selection-title");
+      recapDetails.prepend(h2);
+
+      document.querySelector("h2").textContent = bTitle;
+
+      let costGold = cost.toString().slice(0, 3);
+      let costSilver = cost.toString().slice(3, 5);
+      let costCopper = cost.toString().slice(5, 7);
+
+      let coinGold = document.createElement("span");
+      coinGold.setAttribute("id", "gold");
+      let coinSilver = document.createElement("span");
+      coinSilver.setAttribute("id", "silver");
+      let coinCopper = document.createElement("span");
+      coinCopper.setAttribute("id", "copper");
+
+      costElement.innerHTML =
+        costGold +
+        coinGold.outerHTML +
+        costSilver +
+        coinSilver.outerHTML +
+        costCopper +
+        coinCopper.outerHTML;
+
+      const sBundle = "mount bundle";
+      const sRaptor = "raptor";
+      const sSpringer = "springer";
+      const sSkimmer = "skimmer";
+      const sJackal = "jackal";
+      const sGriffon = "griffon";
+      const sWarclaw = "warclaw";
+      const sBeetle = "roller beetle";
+      const sSkyscale = "skyscale";
+      const sTurtle = "siege turtle";
+
+      let image = document.createElement("div");
+      let newHeader = document.querySelector(".selection-title");
+      let condition = newHeader.innerText.toLowerCase();
+      function setClassName() {
+        if (condition == sBundle) {
+          image.classList.add("bundle");
+        }
+        if (condition == sRaptor) {
+          image.classList.add("raptor");
+        }
+        if (condition == sSpringer) {
+          image.classList.add("springer");
+        }
+        if (condition == sSkimmer) {
+          image.classList.add("skimmer");
+        }
+        if (condition == sJackal) {
+          image.classList.add("jackal");
+        }
+        if (condition == sGriffon) {
+          image.classList.add("griffon");
+        }
+        if (condition == sWarclaw) {
+          image.classList.add("warclaw");
+        }
+        if (condition == sBeetle) {
+          image.classList.add("beetle");
+        }
+        if (condition == sSkyscale) {
+          image.classList.add("skyscale");
+        }
+        if (condition == sTurtle) {
+          image.classList.add("turtle");
+        }
+      }
+      setClassName();
+
+      console.log(condition);
+      console.log(sBundle);
+
+      recap.append(image);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,394 @@
+/* google font - poppins */
+/* font-family: 'Poppins', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font controling watch digits */
+@font-face {
+  font-family: "Number Style";
+  src: local(Arial);
+  font-weight: 100;
+  size-adjust: 200%; /* controls size of digits */
+  unicode-range: U+30-39;
+}
+
+:root {
+  --fnt-clr: hsl(0, 100%, 100%, 1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--fnt-clr);
+
+  background-color: hsl(0, 100%, 0%, 1);
+}
+/* transitions */
+#setup,
+main {
+  /* switch from setup to main content transition */
+  transition: opacity 1s ease-in-out;
+}
+
+#info button {
+  /* show/hide button transition */
+  transition: opacity 1s ease;
+}
+
+#focus-question {
+  transition: height 500ms ease, opacity 1s ease-in-out;
+}
+#focus {
+  transition: opacity 2s ease-in-out;
+}
+
+/***************/
+
+/* setup page */
+#setup {
+  padding-inline: 1rem;
+  gap: 3rem;
+
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  text-align: center;
+  font-weight: 300;
+}
+#photo img {
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+#info {
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  filter: drop-shadow(1px 1px 6px rgb(0, 0, 0, 0.6));
+}
+#info label {
+  justify-content: center;
+  align-items: center;
+}
+#info button,
+#focus-question button {
+  padding: 0.75rem 1.25rem;
+  background-color: hsl(0, 100%, 100%, 0.1);
+  color: inherit;
+  cursor: pointer;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  border: 1px solid var(--fnt-clr);
+  border-radius: 1px;
+
+  transition: background-color 500ms ease, transform 250ms ease,
+    opacity 1s ease-in-out;
+}
+#info button:hover,
+#focus-question button:hover {
+  background-color: hsl(0, 100%, 0%, 0.4);
+}
+#info button:active,
+#focus-question button:active {
+  transform: scale(0.9);
+}
+#name,
+#focus-question > input {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  width: min(375px, 80%);
+  border-bottom: 3px solid #fff;
+  border-radius: 2px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 200;
+  text-align: center;
+  text-transform: capitalize;
+}
+#name:focus,
+#focus-question > input:focus {
+  outline: 0;
+}
+
+/* main page*/
+main {
+  padding-top: 22vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+#watch {
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  transform: translateX(5%);
+}
+#time {
+  font-family: "Number Style", "Poppins", "Arial", sans-serif;
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 400;
+}
+#date {
+  margin-bottom: 1rem;
+}
+#greeting {
+  font-size: clamp(1rem, 5vw, 3rem);
+  font-weight: 300;
+  text-align: center;
+}
+#focus-question {
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
+  height: 195px;
+  opacity: 1;
+
+  font-size: 2rem;
+  font-weight: 200;
+}
+#focus-question > input {
+  padding: 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 200;
+}
+#focus-question:has(input:disabled) {
+  height: 0;
+  opacity: 0;
+}
+#focus-span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+#focus {
+  --box-size: 15px;
+  position: relative;
+  isolation: isolate;
+}
+#focus-checkbox {
+  aspect-ratio: 1 / 1;
+  width: var(--box-size);
+  margin-right: 15px;
+  opacity: 0;
+  cursor: pointer;
+
+  position: relative;
+}
+#focus-checkbox:checked ~ .pseudo-checkbox::after {
+  content: "\002714";
+  display: block;
+  position: absolute;
+  top: -8px;
+  font-weight: 800;
+}
+.pseudo-checkbox {
+  display: block;
+  height: var(--box-size);
+  aspect-ratio: 1 / 1;
+  background-color: transparent;
+  border: 2px solid var(--fnt-clr);
+  border-radius: 5px;
+
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+  z-index: -1;
+}
+#focus > span {
+  display: block;
+  margin-inline: auto;
+}
+#focus > input:checked + label {
+  text-decoration-thickness: 0.1rem;
+}
+#focus > label {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.appear-on-hover {
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+#focus:hover > .pseudo-checkbox,
+#focus:hover .appear-on-hover,
+#watch:hover .appear-on-hover {
+  opacity: 1;
+}
+
+/* settings */
+.settings {
+  position: relative;
+  width: 30px;
+  aspect-ratio: 1 / 1;
+}
+.settings > .toggle-button {
+  cursor: pointer;
+}
+.settings > .toggle-button ~ .options {
+  position: absolute;
+}
+#watch .settings > .toggle-button,
+#focus .settings > .toggle-button {
+  font-size: 1.2rem;
+  border-radius: 100%;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+}
+#focus .settings > .toggle-button {
+  margin-left: 1rem;
+}
+#watch .settings > .toggle-button > span,
+#focus .settings > .toggle-button > span {
+  transform: translateY(-10%) scale(1.25);
+}
+#watch .settings > .toggle-button:hover,
+#focus .settings > .toggle-button:hover {
+  background-color: hsl(0, 100%, 100%, 0.25);
+}
+#watch .settings:has(#watch-toggle:checked) .appear-on-hover,
+#focus .settings:has(#focus-toggle:checked) .appear-on-hover {
+  background-color: hsl(0, 100%, 100%, 0.25);
+  opacity: 1;
+}
+
+/* dropdown settings */
+
+.options {
+  --dropdown-clr: hsl(0, 100%, 100%, 0.8);
+  --dropdown-hlt: hsl(0, 100%, 0%, 0.2);
+
+  background-color: var(--dropdown-clr);
+  padding-block: 6px;
+  border-radius: 0.4rem;
+
+  left: -20%;
+  top: calc(100% + 20px);
+
+  min-width: max-content;
+
+  color: #000;
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.options::after {
+  content: "";
+
+  display: block;
+  width: 0;
+  height: 0;
+  bottom: 100%;
+  left: 8%;
+
+  border: 10px solid transparent;
+  border-top: 0;
+  border-bottom: 10px solid var(--dropdown-clr);
+
+  background-color: transparent;
+  position: absolute;
+}
+#focus .options {
+  left: 30%;
+}
+#focus .options::after {
+  left: 20%;
+}
+
+.options .option {
+  padding-inline: 1rem;
+  padding-block: 5px;
+  text-align: left;
+  cursor: pointer;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1ch;
+}
+.options .option button,
+.options .option label {
+  cursor: pointer;
+}
+.options .option:hover {
+  background-color: var(--dropdown-hlt);
+}
+.options .option::before {
+  font-size: 1rem;
+  margin-top: -0.3ch;
+}
+#focus .options button {
+  background-color: transparent;
+  border: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  width: 100%;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#edit-focus::before {
+  content: "\002710";
+}
+#clear-focus::before {
+  content: "\002716";
+}
+#format-switch {
+  display: none;
+}
+
+#toggle-ui {
+  cursor: pointer;
+  display: inline-block;
+  background-color: hsl(0, 100%, 0%, 0.2);
+  margin-left: 15px;
+  width: 30px;
+  height: 18px;
+  vertical-align: middle;
+  border-radius: 30px;
+  padding: 2;
+  transition: background-color 250ms ease-in-out;
+}
+#toggle-ui::after {
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  height: 75%;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+  border-radius: 100%;
+  margin-inline: 3px;
+
+  transition: margin 500ms ease-in-out;
+}
+#time-format:has(#format-switch:checked) #toggle-ui {
+  background-color: hsl(120, 100%, 35%, 0.5);
+}
+#time-format:has(#format-switch:checked) #toggle-ui::after {
+  margin-left: 13px;
+}
+
+/* TODAY span */
+#focus-span {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* transition for watch */
+#watch:has(#format-switch:checked) {
+  gap: 2rem;
+}
+#watch,
+#watch > * {
+  transition: gap 500ms ease-in-out;
+}

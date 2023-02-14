@@ -1,0 +1,403 @@
+.oak {
+  --oak-clr-1: #000;
+  --oak-clr-2: white;
+  --oak-clr-3: red;
+  --oak-clr-4: #ecb093;
+  --oak-clr-5: gray;
+
+  --oak-rest: calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 0)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 0)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 0)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 0)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 0)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 0)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 1)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 2)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 3)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 4)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 1) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-5),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-5),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 14) calc(var(--pokemon-width) * 5)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 1) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-5),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-5),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 14) calc(var(--pokemon-width) * 6)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 1) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-5),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-5),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 14) calc(var(--pokemon-width) * 7)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 8)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 1) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-5),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-5),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 14) calc(var(--pokemon-width) * 9)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 0) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 1) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 14) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 15) calc(var(--pokemon-width) * 10)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 0) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 1) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 14) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-4),
+    calc(var(--pokemon-width) * 15) calc(var(--pokemon-width) * 11)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 1) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-3),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-3),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 14) calc(var(--pokemon-width) * 12)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-2),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 13)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 14)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 15)
+      var(--oak-clr-1);
+
+  background-color: transparent;
+  box-shadow: var(--oak-rest);
+}

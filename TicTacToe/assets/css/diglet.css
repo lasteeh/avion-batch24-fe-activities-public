@@ -1,0 +1,512 @@
+.diglett {
+  animation-duration: 500ms;
+
+  --diglett-clr-1: #000;
+  --diglett-clr-2: brown;
+  --diglett-clr-3: red;
+  --diglett-clr-4: white;
+  --diglett-clr-5: gray;
+
+  --diglett-rest: calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 1)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 1)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 1)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-4),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 1) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 14) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1);
+
+  --diglett-step: calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 1)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 1)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 1)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 2)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 3)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 4)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 5)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-4),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 6)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-3),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 7)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 8)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 9)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-2),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 10)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 1) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 9) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-5),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 14) calc(var(--pokemon-width) * 11)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 2) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 3) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 4) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 5) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 6) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 7) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 8) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 10) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 11) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 12) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1),
+    calc(var(--pokemon-width) * 13) calc(var(--pokemon-width) * 12)
+      var(--diglett-clr-1);
+
+  background-color: transparent;
+  box-shadow: var(--diglett-rest);
+}
+
+#sprites .diglett {
+  animation-name: diglettWalk;
+}
+
+@keyframes diglettWalk {
+  0% {
+    box-shadow: var(--diglett-rest);
+  }
+
+  50% {
+    box-shadow: var(--diglett-step);
+  }
+
+  100% {
+    box-shadow: var(--diglett-rest);
+  }
+}

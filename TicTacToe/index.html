@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="assets/css/pikachu.css" />
+    <link rel="stylesheet" href="assets/css/jigglypuff.css" />
+    <link rel="stylesheet" href="assets/css/diglet.css" />
+    <link rel="stylesheet" href="assets/css/unowno.css" />
+    <link rel="stylesheet" href="assets/css/unownx.css" />
+    <link rel="stylesheet" href="assets/css/suicune.css" />
+    <link rel="stylesheet" href="assets/css/oak.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="tictactoe">
+      <section class="background"></section>
+      <section id="game-menu">
+        <h1>PoKéMoN</h1>
+        <h2>TicTacToe</h2>
+        <h3>Gotta Catch 'Em-Oe</h3>
+        <button type="button" id="startGame">Start</button>
+        <p class="disclaimer">
+          Non-commercial project. All pictures belong to their authors.
+          <span>design by Last</span>
+        </p>
+        <div class="background">
+          <div class="suicune"></div>
+        </div>
+      </section>
+      <section id="character-select">
+        <div class="background"></div>
+        <h2>Character Select</h2>
+        <div class="p1" id="characters">
+          <div class="character">
+            <div class="pikachu pokeball">
+              <div class="pikachu pokemon"></div>
+            </div>
+            <h4>Pikachu<span class="gender">&#9794;</span></h4>
+          </div>
+
+          <div class="character">
+            <div class="jigglypuff pokeball">
+              <div class="jigglypuff pokemon"></div>
+            </div>
+            <h4>Jigglypuff<span class="gender">&#9794;</span></h4>
+          </div>
+
+          <div class="character">
+            <div class="diglett pokeball">
+              <div class="diglett pokemon"></div>
+            </div>
+            <h4>Diglett<span class="gender">&#9794;</span></h4>
+          </div>
+
+          <div class="character">
+            <div class="unowno pokeball">
+              <div class="unowno pokemon"></div>
+            </div>
+            <h4>Unown<span class="invisible">O</span></h4>
+          </div>
+          <div class="character">
+            <div class="unownx pokeball">
+              <div class="unownx pokemon"></div>
+            </div>
+            <h4>Unown<span class="invisible">X</span></h4>
+          </div>
+        </div>
+        <div class="message-box">
+          <h3 class="message"></h3>
+          <div class="controls">
+            <button type="button" id="select-pokemon">Select</button>
+            <button type="button" id="playGame">Play</button>
+          </div>
+        </div>
+      </section>
+      <section id="game">
+        <div class="background"></div>
+        <div id="board">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="message">
+          <p></p>
+          <div id="controls">
+            <button id="restartGame">Restart</button>
+            <button id="changePokemon">
+              <sup>P</sup><sub>K</sub><sup>M</sup><sub>N</sub>
+            </button>
+            <button id="previous-btn">Previous</button>
+            <button id="next-btn">Next</button>
+          </div>
+        </div>
+      </section>
+      <dialog id="error">
+        <div class="error-wrapper">
+          <div class="oak pokeball">
+            <div class="oak pokemon"></div>
+          </div>
+          <div class="content-holder">
+            <p></p>
+            <button type="button">close</button>
+          </div>
+        </div>
+      </dialog>
+    </main>
+
+    <div id="sprites">
+      <div class="jigglypuff pokeball">
+        <div class="jigglypuff pokemon"></div>
+      </div>
+      <div class="pikachu pokeball">
+        <div class="pikachu pokemon"></div>
+      </div>
+      <div class="diglett pokeball">
+        <div class="diglett pokemon"></div>
+      </div>
+      <div class="oak pokeball">
+        <div class="oak pokemon"></div>
+      </div>
+      <div class="unowno pokeball">
+        <div class="unowno pokemon"></div>
+      </div>
+      <div class="suicune"></div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
